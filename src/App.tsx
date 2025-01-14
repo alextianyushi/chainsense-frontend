@@ -51,7 +51,7 @@ function App() {
 
     try {
       // Explicitly specify the type of response
-      const response = await axios.post<ChatResponse>('http://localhost:5001/api/chat', 
+      const response = await axios.post<ChatResponse>('https://chainsense-backend.onrender.com/', 
         { message: input }, 
         { headers: { 'Content-Type': 'application/json' } }
       );
